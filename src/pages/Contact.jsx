@@ -6,6 +6,7 @@ const Contact = () => {
     <div className='contact'>
         <main>
             <h1>Contact Us</h1>
+
             <form >
                 <div>
                     <label>name</label>
@@ -19,8 +20,7 @@ const Contact = () => {
                     <label>Message</label>
                     <input type="text" required placeholder='Tell us about your query....'/>
                 </div>
-
-                <button type='submit'>send</button>
+                <button type='submit' onClick={(e)=>e.preventDefault()}>send</button>
             </form>
         </main>
     </div>
